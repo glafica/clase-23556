@@ -7,7 +7,8 @@
     <!-- Este link es para poder usar Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">  <!-- este es el link al archivo css de estilos -->
-    <!-- Esta es la tipografia del titulo principal copiado desde googlefonts -->
+        <!-- Esta es la tipografia del titulo principal copiado desde googlefonts -->
+        <script src="scripts.js"></script>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Vidaloka&display=swap" rel="stylesheet"> -->
 
@@ -15,6 +16,21 @@
 
 </head>
 <body>
+<!-- ACA EMPIEZA EL POPUP -->
+  <div id="tomodal" class="modal">
+  <button id="btncerrar" onclick="closeModal()">&times;</button>
+  <div class="contmodal">
+  <H5>¡Reserva tu lugar ya mismo!</H5>
+  <h6>No te pierdas nuestro Coloquio Internacional</h6> 
+  <h6>sobre Urbanismo Sostenible.</h6>
+  <div class="fotomodal"> 
+  <img src="img/coloquio.jpg" alt="PopUP del Coloquio internacional" width="40%" height="40%">
+  </div> 
+  <button id="comprar"><a href="tickets.html" class="nav-linkes">comprar</a></button>
+</div>
+</div>
+<!-- ACA TERMINA EL POPUP -->
+
     <header class="header-flex">
     <div class="logo">
         <img src="img/Icon01.png" alt="Logo de la pagina">
@@ -46,8 +62,7 @@
                 <hr>
                 </hr>
                 </div>
-                <p>Construyendo mundos
-                </p>
+                <p style="font-size: 30px;text-shadow: 4px 4px 4px #333;">Construyendo mundos</p>
             </div>
 </div>
 </section>

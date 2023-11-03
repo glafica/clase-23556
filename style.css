@@ -13,7 +13,96 @@
         background-color:rgb(0, 29, 54);
     }
 /* ACA TERMINA EL BODY */
-
+/* ------------------------------------------------------------------------------------------ */
+/*ACA EMPIEZA EL POPUP */
+.modal {
+     text-align: center;
+     font-family: sans-serif;
+     margin: 100;
+     width: 100%;
+     height: 100%;
+     background: rgba(0,0,0,0.8);
+     position: fixed; 
+     top: 0;
+     left: 0;
+     display: flex;
+  /* ANIMACION MODAL */
+     animation: modal 1s 2s forwards;
+     visibility: hidden;
+     opacity: 0;   
+ /* ANIMACION MODAL*/
+ }
+ 
+ .contmodal {
+     flex-wrap: wrap;
+     justify-content: center;
+     justify-items: center;
+     margin: auto;
+     width: 42%;
+     height: 55vh;
+     background-color: #fff;
+     border-radius: 10px;
+     box-shadow: 5px 5px 5px gold;
+ }
+     #btncerrar{ 
+     margin-top: 5%;
+     margin-right: 50vh;
+     position: fixed;
+     text-align: center;
+     align-items: center;
+     color: #dedfe0;
+     font-size: 25px; 
+     z-index: 900;
+     background-color: rgb(163, 3, 3);
+     height: 40px;
+     width: 40px;
+     line-height: 40px;
+     border-radius: 50%;
+     right: 10px;
+     cursor: pointer;
+     transition: all 0.3s ease 0s;
+  /* ANIMACION MODAL */
+     animation: modal 0s 0s forwards;
+     visibility: hidden;
+     opacity: 0;  
+ /* ANIMACION MODAL */
+ }
+      #btncerrar:hover{ 
+     background-color: red;
+     color: #ffffff;
+     transform: scale(1.1);
+  }
+ /* ANIMACION MODAL */
+  @keyframes modal {
+    100% {
+     visibility: visible;
+     opacity: 1;
+    } 
+ }  
+ /* ANIMACION MODAL */
+  .fotomodal{
+ background-color: #fff;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ border-color: red;
+ 
+ }
+  #comprar{
+     font-weight: 700;
+     color: blue;
+     background-color: gold;
+     padding: 9px 25px;
+     border-radius: 50px;
+     cursor: pointer;
+     transition: all 0.3s ease 0s;
+ }
+     #comprar:hover{
+     background-color: #e3fc03;
+     color: black;
+     transform: scale(1.1);
+ } 
+  /*ACA TERMINA EL POPUP */
+ /*------------------------------------------------ */
 /* ACA EMPIEZA HEADER */
     header{
         background-color: rgb(8, 48, 83);
@@ -34,7 +123,6 @@
         height: 70px;
         width: auto;
         transition: all 0.3s;
-        /* border-radius: 50px; */
     }
     .header-flex .logo img:hover{
         transform: scale(1.2);
@@ -81,7 +169,6 @@ color: #e3fc03;
     display: flex;
     height: 600px;
 }
-
 .contImgText {
     animation-name: opacidad1;
 	animation-duration: 2s;
@@ -89,7 +176,6 @@ color: #e3fc03;
 	height:600px;
     position: relative;
 }
-
 .contImgText video {
   width: 100%;
   height: 100%;
@@ -118,7 +204,7 @@ color: #e3fc03;
 }
 .contTexto h1{
 	line-height: 1.2;
-	text-shadow: 2px 2px 2px #333;
+	text-shadow: 4px 4px 4px #333;
 	font-weight: 400;
 	font-family: 'Montserrat', sans-serif;
 	margin: 0;
@@ -456,3 +542,25 @@ h3{
     margin-left: 32px;   
 }
 /* ACA TERMINA HTML PORTFOLIO */
+
+
+/*ACA EMPIEZA TIKETS */
+main{
+margin-top: 80px;
+}
+.valticket {
+color: #ffffff;
+
+}
+.m-0{
+color: #ffffff;
+padding-top: 20px;
+}
+/*ACA EMPIEZA TIKETS */
+.cardtickets{
+margin: 20px;
+}
+#formulario {
+    margin-top: -20px;
+}
+/*ACA TERMINA TIKETS */
